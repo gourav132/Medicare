@@ -49,13 +49,13 @@ function App() {
       <CssBaseline />
 
         <BrowserRouter>
-          <Navbar setMode = { setMode } mode = { mode } />
+          {/* <Navbar setMode = { setMode } mode = { mode } /> */}
           {/* <Sidebar /> */}
           <Routes>
             <Route path = '/' element = { <Home />  } />
             <Route path = '/login' element = { <Authentication /> } />
             <Route path = '/Settings' element = { <Settings /> } />
-            {/* <Route path = '/Redesigned/Login' element = { <LoginPage /> } /> */}
+            <Route path = '/Redesigned/Login' element = { <LoginPage /> } />
             
             <Route path = '/New' element = { <DatasetProvider> <AddReport /> </DatasetProvider>} />
             
