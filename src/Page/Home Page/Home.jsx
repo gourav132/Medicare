@@ -53,7 +53,7 @@ export default function Home() {
         <>
         <DeleteModal setDocument={setDocument} setModalOpen={setModalOpen} Modalopen={Modalopen} documentDelete={documentDelete} setDocumentDelete={setDocumentDelete} />
 
-        <Grid container sx = {{ mt: 0}}>
+        <Grid container sx = {{ mt: 8}}>
             <Grid item md = {5} lg = {5} className = {style.leftOption}>
                 <Container>
 

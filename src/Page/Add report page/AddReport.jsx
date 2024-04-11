@@ -23,7 +23,7 @@ export default function AddReport() {
 
     return (
         <Grid container alignItems="center" className = { style.body }>
-            <Grid alignItems = "center" justifyContent = "center" item lg = {6} md = {12} xs = {12} className = { style.formSection }>
+            <Grid alignItems = "center" justifyContent = "center" item lg = {12} md = {12} xs = {12} className = { style.formSection }>
                 <motion.div className = { style.wrapper } >
                     <Typography variant = "h4" sx = {{ marginTop: 8, textAlign: 'center'}}>
                         Add new report to your archive
@@ -46,7 +46,7 @@ export default function AddReport() {
                 </motion.div>
             </Grid>
 
-            <Grid className = { style.cardSection } item lg = {6} sx ={{ marginTop: "64px", display: {xs: "none", md: "none", lg: "block"}}}>
+            {/* <Grid className = { style.cardSection } item lg = {6} sx ={{ marginTop: "64px", display: {xs: "none", md: "none", lg: "block"}}}>
                 <Masonry columns={3} spacing={3}>
                     <Card variant="outlined">
                         <Grid container justifyContent="flex-start" alignItems = "center" sx = {{minHeight: "100%"}}>
@@ -137,7 +137,7 @@ export default function AddReport() {
                         </Grid>
                     </Card>
                 </Masonry>
-            </Grid>
+            </Grid> */}
 
         </Grid>
     )

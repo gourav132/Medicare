@@ -8,6 +8,7 @@ import { DatasetProvider } from './Context/DatasetContext';
 import { ColorPalette } from './Context/ThemeContext';
 
 import LoginPage from './Redesigned/LoginPage';
+import Dashboard from './Redesigned/Dashboard/Dashboard';
 
 
 function App() {
@@ -49,18 +50,19 @@ function App() {
       <CssBaseline />
 
         <BrowserRouter>
-          {/* <Navbar setMode = { setMode } mode = { mode } /> */}
+          <Navbar setMode = { setMode } mode = { mode } />
           {/* <Sidebar /> */}
           <Routes>
             <Route path = '/' element = { <Home />  } />
             <Route path = '/login' element = { <Authentication /> } />
             <Route path = '/Settings' element = { <Settings /> } />
-            <Route path = '/Redesigned/Login' element = { <LoginPage /> } />
-            
             <Route path = '/New' element = { <DatasetProvider> <AddReport /> </DatasetProvider>} />
             
+            <Route path = '/Redesigned/Login' element = { <LoginPage /> } />
+            <Route path = '/Redesigned/Dashboard' element = { <Dashboard /> } />
+            
           </Routes>
-          {/* { user ? <BottomNav /> : <> </> } */}
+          { user ? <BottomNav /> : <> </> }
         </BrowserRouter>
 
     </ThemeProvider>
